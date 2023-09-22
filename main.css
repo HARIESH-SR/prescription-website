@@ -1,0 +1,150 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  margin-top: 1px;
+  background-color: rgb(202, 225, 173);
+}
+form{
+  background-color: #bbcfa5;
+  padding: 2%;
+  border:2px solid black;
+  border-radius: 2%;
+ 
+}
+form:hover{
+  transform: scale(1.005);
+}
+label{
+  font-size: 120%;
+
+}
+h1{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  /* background-color: rgb(173, 226, 161); */
+  padding: 2%;
+  /* border: 1px solid black; */
+  color: #332e2e;  
+}
+input[type="text"] {
+  width: 90%;
+  padding: 10px;
+  margin: 1px;
+  background-color: rgb(215, 201, 173);
+  font-size: 105%;
+  border-radius: 5%;
+
+}
+
+input[type="number"] {
+  width: 90%;
+  padding: 10px;
+  margin: 1px;
+  background-color: rgb(214, 223, 164);
+  font-size: 105%;
+  border-radius: 5%;
+
+}
+input[type="number"]:hover,input[type="text"]:hover{
+  transform: scale(1.01);
+  border-color: orange
+}
+#patientName{
+  margin-top: 1%;
+  padding: 1%;
+  background-color: #b3d7b9;
+  font-size: 110%;
+}
+#patientName:hover{
+ background-color: #dacc9d;
+ transform: scale(1.005);
+}
+/* Medicine Table Styles */
+#medicineTable {
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+::placeholder {
+  color: black;
+  opacity: 1; /* Firefox */
+  font-size: 110%;
+ 
+}
+
+::-ms-input-placeholder { /* Edge 12 -18 */
+  color: rgb(0, 0, 0);
+}
+
+#medicineTable th,
+#medicineTable td {
+  border: 1px solid #ccc;
+  padding: 0.8%;
+  text-align: center;
+  border: 1px solid black;
+}
+#medicineTable th {
+  background-color: #c39999;
+  padding: 1.5%;
+  text-align: center;
+  border: 1px solid black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: large;
+}
+
+/* "Add Medicine" Button Styles */
+#addMedicine, #generateInvoice, #clearForm {
+  margin-top: 20px;
+  padding: 1%;
+  font-size: 102%;
+  background-color: #abc7c1;
+  margin-left: 1%;
+  border-radius: 10%;
+}
+#addMedicine:hover, #generateInvoice:hover, #clearForm:hover{
+  transform: scale(1.01);
+  background-color: #aabfbb;;
+}
+
+
+/* Invoice Output Styles */
+#invoiceOutput {
+  display: none;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+/* Invoice Table Styles (for the generated invoice, if displayed on this page) */
+.invoiceTable {
+  width: 100%;
+}
+
+.invoiceTable th,
+.invoiceTable td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.invoiceTable th {
+  background-color: #f2f2f2;
+}
+
+/* Styles for the "Remove" button */
+.removeMedicine {
+  background-color: #f44336; /* Red background color */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.removeMedicine:hover {
+  background-color: #d32f2f; /* Darker red on hover */
+}
+
+
