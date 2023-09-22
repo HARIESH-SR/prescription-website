@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Medical Invoice Generator</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>PRESCRIPTION</h1>
+  
+  <form id="invoiceForm">
+    <label for="patientName"><b>Patient's Name:</b></label>
+    <input type="text" id="patientName" placeholder="Enter Patient's Name" required>
+    
+    <table id="medicineTable">
+      <thead>
+        <tr>
+          <th>Medicine Name</th>
+          <th>Morning Dosage</th>
+          <th>Noon Dosage</th>
+          <th>Night Dosage</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="medicine">
+          <td><input type="text" class="medicineName"  placeholder="Enter Medicine Name" required></td>
+          <td><input type="number" class="morningDosage" placeholder="Enter Morning Dosage" min=0 required></td>
+          <td><input type="number" class="noonDosage" min=0 placeholder="Enter Noon Dosage" required></td>
+          <td><input type="number" class="nightDosage" min=0 placeholder="Enter Night Dosage" required></td>
+          <td><button type="button" class="removeMedicine">Remove</button></td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <button type="button" id="addMedicine">Add Medicine</button>
+    <button type="submit" id="generateInvoice">Generate Invoice</button>
+    <button type="button" id="clearForm">Clear</button>
+  </form>
+  
+  <div id="invoiceOutput"></div>
+  
+  <script src="qrcode.min.js"></script>
+  <script src="script.js"></script>
+  
+</body>
+</html>
